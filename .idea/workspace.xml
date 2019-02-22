@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54cfe98d-7ccf-447e-bc0e-d360f10fdec4" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/static/js/jquery.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cbss/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/cbss/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/userInfoList.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/userInfoList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_cbss/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_cbss/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_cbss/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_cbss/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,8 +33,8 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web_cbss/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+            <state relative-caret-position="217">
+              <caret line="20" column="31" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
               <folding>
                 <element signature="e#632#664#0" expanded="true" />
               </folding>
@@ -47,8 +45,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cbss/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="40" lean-forward="true" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+            <state relative-caret-position="152">
+              <caret line="8" column="49" lean-forward="true" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -59,21 +57,21 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-177">
-              <caret line="53" column="47" lean-forward="true" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
+            <state relative-caret-position="127">
+              <caret line="596" column="6" lean-forward="true" selection-start-line="596" selection-start-column="6" selection-end-line="596" selection-end-column="6" />
               <folding>
                 <element signature="e#14821#14862#0#HTML" expanded="true" />
                 <element signature="e#15449#15490#0#HTML" expanded="true" />
-                <element signature="e#25534#25541#1#HTML" expanded="true" />
-                <element signature="e#35048#35089#0#HTML" expanded="true" />
-                <element signature="e#65501#65542#0#HTML" expanded="true" />
-                <element signature="e#69149#69167#0#HTML" expanded="true" />
-                <element signature="e#69691#69709#0#HTML" expanded="true" />
-                <element signature="e#70249#70267#0#HTML" expanded="true" />
-                <element signature="e#70779#70798#0#HTML" expanded="true" />
-                <element signature="e#71306#71324#0#HTML" expanded="true" />
-                <element signature="e#71824#71842#0#HTML" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="form_styles.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/form_styles.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-407">
+              <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -130,6 +128,9 @@
       <find>navbar-inner</find>
       <find>.navbar-inner</find>
       <find>.navbar-inner .container-fluid</find>
+      <find>Forms</find>
+      <find>Dashboard</find>
+      <find>客户信息查询</find>
     </findStrings>
     <replaceStrings>
       <replace>../assets</replace>
@@ -142,7 +143,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web_cbss/urls.py" />
         <option value="$PROJECT_DIR$/apps/cbss/models.py" />
         <option value="$PROJECT_DIR$/apps/cbss/views.py" />
         <option value="$PROJECT_DIR$/test.py" />
@@ -152,8 +152,10 @@
         <option value="$PROJECT_DIR$/templates/userInfoList.html" />
         <option value="$PROJECT_DIR$/cbss/views.py" />
         <option value="$PROJECT_DIR$/web_cbss/settings.py" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/assets/stylesheets/light-theme.css" />
+        <option value="$PROJECT_DIR$/cbss/router.py" />
+        <option value="$PROJECT_DIR$/web_cbss/urls.py" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
       </list>
     </option>
   </component>
@@ -190,42 +192,7 @@
             <path>
               <item name="web_cbss" type="b2602c69:ProjectViewProjectNode" />
               <item name="web_cbss" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web_cbss" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web_cbss" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web_cbss" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web_cbss" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web_cbss" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web_cbss" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web_cbss" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web_cbss" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="slider_nav" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web_cbss" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web_cbss" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="cbss" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -340,9 +307,9 @@
       <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" />
       <window_info anchor="bottom" id="Python Console" order="3" />
-      <window_info anchor="bottom" id="Run" order="8" visible="true" weight="0.32978722" />
+      <window_info active="true" anchor="bottom" id="Run" order="8" visible="true" weight="0.32978722" />
       <window_info anchor="bottom" id="Terminal" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.25545675" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.18108326" />
       <window_info anchor="bottom" id="manage.py@web_cbss" order="7" weight="0.3280142" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="2" />
@@ -528,26 +495,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web_cbss/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-          <folding>
-            <element signature="e#632#664#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cbss/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="40" lean-forward="true" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web_cbss/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -572,22 +519,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/form_styles.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-407">
+          <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cbss/router.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cbss/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="49" lean-forward="true" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_cbss/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="20" column="31" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+          <folding>
+            <element signature="e#632#664#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-177">
-          <caret line="53" column="47" lean-forward="true" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
+        <state relative-caret-position="127">
+          <caret line="596" column="6" lean-forward="true" selection-start-line="596" selection-start-column="6" selection-end-line="596" selection-end-column="6" />
           <folding>
             <element signature="e#14821#14862#0#HTML" expanded="true" />
             <element signature="e#15449#15490#0#HTML" expanded="true" />
-            <element signature="e#25534#25541#1#HTML" expanded="true" />
-            <element signature="e#35048#35089#0#HTML" expanded="true" />
-            <element signature="e#65501#65542#0#HTML" expanded="true" />
-            <element signature="e#69149#69167#0#HTML" expanded="true" />
-            <element signature="e#69691#69709#0#HTML" expanded="true" />
-            <element signature="e#70249#70267#0#HTML" expanded="true" />
-            <element signature="e#70779#70798#0#HTML" expanded="true" />
-            <element signature="e#71306#71324#0#HTML" expanded="true" />
-            <element signature="e#71824#71842#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
