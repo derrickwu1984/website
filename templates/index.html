@@ -44,6 +44,7 @@
     <link href='../static/assets/stylesheets/plugins/bootstrap_daterangepicker/bootstrap-daterangepicker.css' media='all' rel='stylesheet' type='text/css' />
     <!-- / flags (country flags) -->
     <link href='../static/assets/stylesheets/plugins/flags/flags.css' media='all' rel='stylesheet' type='text/css' />
+    <link href='../static/assets/stylesheets/plugins/select2/select2.css' media='all' rel='stylesheet' type='text/css' />
     <!-- / slider nav (address book) -->
     <link href='../static/assets/stylesheets/plugins/slider_nav/slidernav.css' media='all' rel='stylesheet' type='text/css' />
     <!-- / fuelux (wizard) -->
@@ -583,37 +584,29 @@
     </h1>
     <div class='pull-right'>
         <div class='btn-group'>
-            <a href="#" class="btn btn-white hidden-phone">Last month</a>
-            <a href="#" class="btn btn-white">Last week</a>
-            <a href="#" class="btn btn-white ">Today</a>
-            <a href="#" class="btn btn-white" id="daterange"><i class='icon-calendar'></i>
-                <span class='hidden-phone'>Custom</span>
-                <b class='caret'></b>
-            </a>
         </div>
     </div>
 </div>
-<!-- Single button -->
-<div class="btn-group">
-    
-  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Action <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu">
-    <li><a href="#">Action</a></li>
-    <li><a href="#">Another action</a></li>
-    <li><a href="#">Something else here</a></li>
-    <li role="separator" class="divider"></li>
-    <li><a href="#">Separated link</a></li>
-  </ul>
+<div class="dropdown">
+    <select class="js-example-basic-single" width="10" name="state" multiple="multiple">
+        @*mutiple="multiple"
+    </select>
 </div>
+
+
+
 </div>
 </div>
 </div>
 </section>
 </div>
+
 <!-- / jquery -->
 <script src='../static/assets/javascripts/jquery/jquery.min.js' type='text/javascript'></script>
+<!-- / self define -->
+<script src='../static/assets/javascripts/self.define.js' type='text/javascript'></script>
+<!-- / boostrap select2 -->
+<script src='../static/assets/javascripts/plugins/select2/select2.js' type='text/javascript'></script>
 <!-- / jquery mobile events (for touch and slide) -->
 <script src='../static/assets/javascripts/plugins/mobile_events/jquery.mobile-events.min.js' type='text/javascript'></script>
 <!-- / jquery migrate (for compatibility with new jquery) -->
