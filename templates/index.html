@@ -587,12 +587,37 @@
         </div>
     </div>
 </div>
+ <form action="/queryInfo/" method="post">
 <div class="dropdown">
-    <select class="js-example-basic-single" width="10" name="state" multiple="multiple">
-        @*mutiple="multiple"
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    数据日期：
+    <select style="width:100px;" class="js-example-basic-single" width="10" name="queryMonth" >
+        <option value="201901">201901</option>
+        <option value="201902">201902</option>
+        <option value="201903">201903</option>
+        <option value="201904">201904</option>
+        <option value="201905">201905</option>
+        <option value="201906">201906</option>
     </select>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    手机号码：
+    <input name="phoneNo"></input>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    是否开通：
+    <select style="width:60px;" class="js-example-basic-single"  name="openFlag" >
+        <option value="1">是</option>
+        <option value="0">否</option>
+    </select>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    手机号段：
+    <select style="width:100px;" class="js-example-basic-single"  name="rangeNo" >
+        <option value="1301171">1301171</option>
+    </select>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="submit" class="ui-button" value="提交"/>
 </div>
-
+     {% csrf_token %}
+</form>
 
 
 </div>

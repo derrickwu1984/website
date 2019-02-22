@@ -15,8 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
-from cbss.views import getList
+from cbss.views import indexPage,getList
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('userList/', getList),
+    path('index/', indexPage),
+    path('queryInfo/', getList),
 ]

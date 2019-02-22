@@ -11,7 +11,7 @@ var data = [
     {id:10,text:'201910'},
     {id:11,text:'201911'},
     {id:12,text:'201912'}
-]
+];
 $(document).ready(function () {
     $('.js-example-basic-single').select2({
         placeholder:"请选择月份",
