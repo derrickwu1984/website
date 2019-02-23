@@ -11,7 +11,5 @@ def getList(request):
         phoneNo = request.POST.get('phoneNo','')
         rangeNo=request.POST.get('rangeNo','')
         all_messages = mobile_userinfo_jinan.objects.filter(phoneno=phoneNo,querymonth=queryMonth,rangeno=rangeNo)
-        for message in all_messages:
-            logging.warning(message.payname)
-    return render(request, 'result.html')
+    return render(request, 'index.html')
 
