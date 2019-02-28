@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54cfe98d-7ccf-447e-bc0e-d360f10fdec4" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/mobile/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile/adminx.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/adminx.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/apps.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,14 +39,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="adminx.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="adminx.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mobile/adminx.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+            <state relative-caret-position="193">
+              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
               <folding>
                 <element signature="e#68#82#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="apps.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mobile/apps.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mobile/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="44" selection-start-column="44" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -106,6 +126,8 @@
         <option value="$PROJECT_DIR$/web_cbss/urls.py" />
         <option value="$PROJECT_DIR$/mobile/models.py" />
         <option value="$PROJECT_DIR$/mobile/adminx.py" />
+        <option value="$PROJECT_DIR$/mobile/__init__.py" />
+        <option value="$PROJECT_DIR$/mobile/apps.py" />
       </list>
     </option>
   </component>
@@ -265,9 +287,9 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3291536" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.3280142" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3280142" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3280142" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32978722" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25788197" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25788197" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -296,7 +318,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../envs/website/Lib/site-packages/django/db/models/fields/__init__.py" />
     <entry file="file://$PROJECT_DIR$/cbss/migrations/0001_initial.py" />
     <entry file="file://$PROJECT_DIR$/cbss/migrations/0003_auto_20190221_1548.py" />
     <entry file="file://$PROJECT_DIR$/cbss/migrations/0002_auto_20190221_1547.py" />
@@ -497,9 +518,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/apps.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/mobile/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -509,11 +527,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mobile/adminx.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        <state relative-caret-position="193">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
           <folding>
             <element signature="e#68#82#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="44" selection-start-column="44" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
         </state>
       </provider>
     </entry>
