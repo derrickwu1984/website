@@ -4,7 +4,11 @@ __date__ = '2019/2/28 9:19'
 import  xadmin
 
 from .models import custInfo
+from xadmin import views
 
+class BaseSetting(object):
+    enable_themes=True
+    use_bootswatch=True
 class custInfoAdmin(object):
     # 显示列表页展示项
     list_display=['phoneno','payname','querymonth','fee','actualbal',
@@ -13,3 +17,4 @@ class custInfoAdmin(object):
     search_fields=['querymonth','phoneno']
     list_filter=['phoneno','querymonth']
 xadmin.site.register(custInfo,custInfoAdmin)
+xadmin.site.register(views.BaseAdminView,BaseSetting)
