@@ -38,10 +38,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'mobile',
     'xadmin',
-    'crispy_forms'
+    'crispy_forms',
+    'users',
+    'mobile',
 ]
+AUTH_USER_MODEL="users.UserProfile"
 
 MIDDLEWARE_CLASSES = [
     'django.middleware.security.SecurityMiddleware',
