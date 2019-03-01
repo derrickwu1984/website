@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'xadmin',
     'crispy_forms',
     'users',
+    'courses',
     'mobile',
 ]
 AUTH_USER_MODEL="users.UserProfile"

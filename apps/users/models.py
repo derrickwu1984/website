@@ -10,7 +10,7 @@ class UserProfile(AbstractUser):
     gender=models.CharField(verbose_name=u"性别",choices=(("male","男"),("femal","女")),default="female",max_length=6)
     address=models.CharField(verbose_name=u"地址",max_length=100,default="")
     phoneno=models.CharField(max_length=11,null=True,blank=True)
-    # image=models.ImageField(upload_to="image/%Y/%m",default=u"image/default.png",max_length=100)
+    image=models.ImageField(upload_to="image/%Y/%m",default=u"image/default.png",max_length=100)
 
     class Meta:
         verbose_name=u"用户信息"
@@ -25,4 +25,19 @@ class EmailVerifyRecord(models.Model):
     send_type=models.CharField(choices=(("register","注册"),("forget","找回密码")),max_length=10)
     # datetime.now() 是编译的时间 datetime.now 是class实例化的时间
     send_time=models.DateTimeField(default=datetime.now)
+
+    class Meta:
+        verbose_name=u"邮箱验证码"
+        verbose_name_plural=verbose_name
+
+class Banner(models.Model):
+    title=models.CharField(max_length=100,verbose_name=u"标题")
+    image=models.ImageField(upload_to="banner/%Y/%m",default=u"banner/default.png",max_length=100,verbose_name=u"轮播图")
+    url=models.URLField(max_length=200,verbose_name=u"访问地址")
+    index=models.IntegerField(default=100,verbose_name=u"顺序")
+    add_time=models.DateTimeField(default=datetime.now,verbose_name=u"添加时间")
+
+    class Meta:
+        verbose_name=u"轮播图"
+        verbose_name_plural=verbose_name
 
