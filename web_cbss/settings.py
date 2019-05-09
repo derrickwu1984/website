@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'users',
     'courses',
     'mobile',
+    'api',
 ]
 AUTH_USER_MODEL="users.UserProfile"
 
@@ -84,7 +85,7 @@ WSGI_APPLICATION = 'web_cbss.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': "cbss",
+        'NAME': "mysql",
         'USER':"root",
         'PASSWORD':"root12#$",
         'HOST':'127.0.0.1'
