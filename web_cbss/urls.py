@@ -5,6 +5,6 @@ from interface.views import get_params,get_headers
 import xadmin
 urlpatterns = [
     url(r'^xadmin/', xadmin.site.urls),
-    url(r'^trs_code/(?P<trs_code>\d*)/$',get_params),
+    url(r'^trs_code/(?P<trs_code>\w*)/$',get_params),
     url(r'^header/$',get_headers),
 ]
