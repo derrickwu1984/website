@@ -544,6 +544,10 @@ class ModelAdminView(CommAdminView):
             "%s:%s_%s_%s" % (self.admin_site.app_name, self.opts.app_label,
             self.model_name, name), args=args, kwargs=kwargs)
 
+    def model_redirect_url(self, *args, **kwargs):
+        print ("*args==========",*args)
+        print("**kwargs==========", **kwargs)
+        # return ''.format(self.opts.app_label)
     def get_model_perms(self):
         """
         Returns a dict of all perms for this model. This dict has the keys
