@@ -42,9 +42,15 @@ INSTALLED_APPS = [
     'crispy_forms',
     'users',
     'interface',
+    'pure_pagination',
 ]
 AUTH_USER_MODEL="users.UserProfile"
+PAGINATION_SETTINGS = {
+    'PAGE_RANGE_DISPLAYED': 10,
+    'MARGIN_PAGES_DISPLAYED': 2,
 
+    'SHOW_FIRST_PAGE_WHEN_INVALID': True,
+}
 MIDDLEWARE_CLASSES = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',

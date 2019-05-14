@@ -2,29 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>接口概要页面</title>
+    <title>企业网银接口查询</title>
 </head>
 <body>
 <center>
-
+<form method="get" action="/search/">
+  <input type="search" placeholder="搜索" name="q" required>
+  <button type="submit">搜索</button>
+</form>
+<div class="content">
 <table id = 'detail_header'>
     <tr>
         <td>交易码</td>
         <td>交易名称</td>
         <td>功能描述</td>
     </tr>
-    {% for header in api_headers %}
+    {% for info in all_info.object_list %}
     <tr>
         <td>
-         <a href="/trs_code/{{ header.trs_code}}">
-             {{ header.trs_code}}
+         <a href="/trs_code/{{ info.trs_code}}">
+             {{ info.trs_code}}
          </a>
         </td>
-        <td>{{ header.trs_name}}</td>
-        <td>{{ header.fuc_desc}}</td>
+        <td>{{ info.trs_name}}</td>
+        <td>{{ info.fuc_desc}}</td>
     </tr>
     {% endfor %}
 </table>
+</div>
+<div class="pagination">
+    {% if all_info.has_previous %}
+        <a href="?{{ all_info.previous_page_number.querystring }}">上一页</a>
+    {% endif %}
+    {% for page in all_info.pages %}
+        {% if page %}
+            {% ifequal page page_obj.number %}
+                <span class="current page">{{ page }}</span>
+            {% else %}
+                <a href="?{{ page.querystring }}" class="page">{{ page }}</a>
+            {% endifequal %}
+        {% else %}
+            ...
+        {% endif %}
+    {% endfor %}
+    {% if all_info.has_next %}
+        <a href="?{{ all_info.next_page_number.querystring }}" >下一页</a>
+    {% endif %}
+</div>
 </center>
 </body>
 </html>
