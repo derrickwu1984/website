@@ -1,68 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>接口详情页面</title>
-</head>
-<body>
-<center>
+{% extends 'base.html' %}
+{% block title %}企业网银接口详情页{% endblock %}
+{% block content %}
+    <center>
+        <div class="table_detail">
+            <table id = 'table_detail'>
+                <tr>
+                    <td>交易码</td>
+                    <td>{{ trs_code }}</td>
+                </tr>
+                <tr>
+                    <td>交易名称</td>
+                    <td>{{ trs_name}}</td>
+                </tr>
+                <tr>
+                    <td>功能详细描述</td>
+                    <td>{{ fuc_desc }}</td>
+                </tr>
+                <tr>
+                    <td>原始接口</td>
+                </tr>
+                <tr>
+                    <td>英文名称</td>
+                    <td>中文名称</td>
+                    <td>数据类型</td>
+                    <td>是否必输</td>
+                    <td>备注</td>
+                </tr>
+                <tr>
+                    <td>输入</td>
+                </tr>
+                {%  for detail in api_details %}
+                    {% if detail.flag == 'in' %}
+                <tr>
 
-<table id = 'detail_table'>
-    <tr>
-        <td>交易码</td>
-        <td>{{ trs_code }}</td>
-    </tr>
-    <tr>
-        <td>交易名称</td>
-        <td>{{ trs_name}}</td>
-    </tr>
-    <tr>
-        <td>功能详细描述</td>
-        <td>{{ fuc_desc }}</td>
-    </tr>
-    <tr>
-        <td>原始接口</td>
-    </tr>
-    <tr>
-        <td>英文名称</td>
-        <td>中文名称</td>
-        <td>数据类型</td>
-        <td>是否必输</td>
-        <td>备注</td>
-    </tr>
-    <tr>
-        <td>输入</td>
-    </tr>
-    {%  for detail in api_details %}
-        {% if detail.flag == 'in' %}
-    <tr>
-
-            <td>{{ detail.eng_name }}</td>
-            <td>{{ detail.chinese_name }}</td>
-            <td>{{ detail.data_type}}</td>
-            <td>{{ detail.required }}</td>
-            <td>{{ detail.remark }}</td>
-    </tr>
-        {% endif %}
-    {% endfor %}
-    <tr>
-        <td>输出</td>
-    </tr>
-    {%  for detail in api_details %}
-        {% if detail.flag == 'out' %}
-    <tr>
-            <td>{{ detail.eng_name }}</td>
-            <td>{{ detail.chinese_name }}</td>
-            <td>{{ detail.data_type}}</td>
-            <td>{{ detail.required }}</td>
-            <td>{{ detail.remark }}</td>
-    </tr>
-        {% endif %}
-    {% endfor %}
-</table>
-<form method="get" action="/header/">
-    <button type="submit">返回首页</button>
-</form>
-</center>
-</body>
-</html>
+                        <td>{{ detail.eng_name }}</td>
+                        <td>{{ detail.chinese_name }}</td>
+                        <td>{{ detail.data_type}}</td>
+                        <td>{{ detail.required }}</td>
+                        <td>{{ detail.remark }}</td>
+                </tr>
+                    {% endif %}
+                {% endfor %}
+                <tr>
+                    <td>输出</td>
+                </tr>
+                {%  for detail in api_details %}
+                    {% if detail.flag == 'out' %}
+                    <tr>
+                            <td>{{ detail.eng_name }}</td>
+                            <td>{{ detail.chinese_name }}</td>
+                            <td>{{ detail.data_type}}</td>
+                            <td>{{ detail.required }}</td>
+                            <td>{{ detail.remark }}</td>
+                    </tr>
+                    {% endif %}
+                {% endfor %}
+            </table>
+        </div>
+    </center>
+{% endblock %}

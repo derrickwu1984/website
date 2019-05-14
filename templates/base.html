@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load staticfiles %}
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}企业网银接口首页{% endblock %}</title>
+</head>
+<body>
+<!--crumbs start-->
+{% block custom_bread %}
+{% endblock %}
+{% block search %}
+    <center>
+        <form method="get" action="/search/">
+            <input type="search" placeholder="请输入交易码" name="q" required>
+            <button type="submit">搜索</button>
+        </form>
+    </center>
+{% endblock %}
+{% block content %}
+{% endblock %}
+{% block custom_js %}
+{% endblock %}
+{% block footer %}
+    <center>
+        <form method="get" action="/header/">
+        <button type="submit">返回首页</button>
+        </form>
+    </center>
+{% endblock %}
+</body>
+</html>
