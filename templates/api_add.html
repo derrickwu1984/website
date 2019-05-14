@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% block search %}
+{% endblock %}
+{% block content %}
+    <center>
+        <div class="detail">
+            <table id="detail">
+                <tr>
+                    <tr>
+                        <td>交易码</td>
+                        <td><input type="text" name="trs_code"></td>
+                    </tr>
+                    <tr>
+                        <td>交易名称</td>
+                        <td><input type="text" name="trs_name"></td>
+                    </tr>
+                    <tr>
+                        <td>功能详细描述</td>
+                        <td><input type="text" name="fuc_desc"></td>
+                    </tr>
+                </tr>
+                <tr>
+                    <td>原始接口</td>
+                </tr>
+                <tr>
+                    <td>英文名称</td>
+                    <td>中文名称</td>
+                    <td>数据类型</td>
+                    <td>是否必输</td>
+                    <td>备注</td>
+                </tr>
+                <tr>
+                    <td>输入</td>
+                </tr>
+                <tr>
+                    <input type="button" value="增加一行输入信息" onclick="add_tr()"/>
+                </tr>
+                <tr>
+                    <td>输出</td>
+                </tr>
+                <tr>
+                    <input type="button" value="增加一行输出信息" onclick="add_tr()"/>
+                </tr>
+            </table>
+        </div>
+
+    </center>
+{% endblock %}
+{% block custom_js %}
+    <script type="text/javascript">
+        function add_tr() {
+            alert('1')
+        }
+    </script>
+{% endblock %}

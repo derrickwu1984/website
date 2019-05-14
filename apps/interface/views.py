@@ -46,3 +46,6 @@ def search(request):
             "error_msg": error_msg,
             "result_list": result_list
     })
+# 新增接口
+def func_add(request):
+    return render(request,"api_add.html")
