@@ -9,11 +9,15 @@ class DBHelper():
     #插入数据
     def insert_api(line):
         settings = get_project_settings()
-        host = settings['MYSQL_HOST']
-        db = settings['MYSQL_DBNAME']
-        user = settings['MYSQL_USER']
-        passwd = settings['MYSQL_PASSWD']
-        db = MySQLdb.connect(host=host,user=user,passwd=passwd,db=db,port=3306)
+        MYSQL_HOST = 'localhost'
+        MYSQL_DBNAME = 'mysql'
+        MYSQL_USER = 'root'
+        MYSQL_PASSWD = 'root12#$'
+        # host = settings['MYSQL_HOST']
+        # db = settings['MYSQL_DBNAME']
+        # user = settings['MYSQL_USER']
+        # passwd = settings['MYSQL_PASSWD']
+        db = MySQLdb.connect(host=MYSQL_HOST,user=MYSQL_USER,passwd=MYSQL_PASSWD,db=MYSQL_DBNAME,port=3306)
         cur = db.cursor()
         insert_sql = """
             insert into interface_details(id,trs_code_id,trs_name,fuc_desc,eng_name,chinese_name,data_type,required,remark,flag)
