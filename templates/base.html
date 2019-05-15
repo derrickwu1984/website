@@ -11,21 +11,24 @@
 {% endblock %}
 {% block search %}
     <center>
+    <tr>
         <form method="get" action="/search/">
             <input type="search" placeholder="请输入交易码" name="q" required>
             <button type="submit">搜索</button>
+        </form>
+    </tr>
+    </center>
+{% endblock %}
+{% block header %}
+    <center>
+        <form method="get" action="/header/">
+            <button type="submit">返回首页</button>
         </form>
     </center>
 {% endblock %}
 {% block content %}
 {% endblock %}
-{% block footer %}
-    <center>
-        <form method="get" action="/header/">
-        <button type="submit">返回首页</button>
-        </form>
-    </center>
-{% endblock %}
+
 {% block custom_js %}{% endblock %}
 </body>
 </html>

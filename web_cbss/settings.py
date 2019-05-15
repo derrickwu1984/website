@@ -142,4 +142,7 @@ STATICFILES_DIRS = (
     ('plug', os.path.join(STATIC_ROOT, 'plug')),
     ('assets', os.path.join(STATIC_ROOT, 'assets')),
 )
-
+MYSQL_HOST='localhost'
+MYSQL_DBNAME='mysql'
+MYSQL_USER='root'
+MYSQL_PASSWD='root12#$'

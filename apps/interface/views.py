@@ -4,6 +4,7 @@ from django.shortcuts import render
 from django.views.generic import View
 from pure_pagination import Paginator, EmptyPage, PageNotAnInteger
 from .models import Details,Header
+from db.dbhelper import DBHelper
 
 def get_headers(request):
     # api_headers = Header.objects.all()
@@ -48,4 +49,22 @@ def search(request):
     })
 # 新增接口
 def func_add(request):
+    params =[]
+    if request.method=='POST':
+         params =json.loads( request.POST.get('form_data'))
+         line = []
+         for index_1 in range(len(params)):
+            print (params[index_1])
+            trs_code = params[index_1][6]
+            trs_name = params[index_1][7]
+            fuc_desc = params[index_1][8]
+            eng_name = params[index_1][0]
+            chinese_name = params[index_1][1]
+            data_type = params[index_1][2]
+            required = params[index_1][4]
+            remark = params[index_1][3]
+            flag = params[index_1][5]
+            line=[trs_code,trs_name,fuc_desc,eng_name,chinese_name,data_type,required,remark,flag]
+            DBHelper.insert_api(line)
+            # print(trs_code,trs_name,fuc_desc,eng_name,chinese_name,data_type,required,remark,flag)
     return render(request,"api_add.html")

@@ -9,4 +9,6 @@ urlpatterns = [
     url(r'^header/$',get_headers),
     url(r'^search/$', search, name='search'),
     url(r'^func_add/$', func_add, name='func_add'),
+    url(r'^save_record/$', func_add, name='func_add'),
+
 ]
