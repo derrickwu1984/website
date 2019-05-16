@@ -22,36 +22,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web_cbss/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="144" selection-start-line="144" selection-end-line="147" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dbhelper.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/db/dbhelper.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-              <folding>
-                <element signature="e#70#90#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/apps/interface/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="67" column="25" lean-forward="true" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
+            <state relative-caret-position="55">
+              <caret line="116" column="4" selection-start-line="116" selection-start-column="4" selection-end-line="116" selection-end-column="4" />
               <folding>
-                <element signature="e#1#13#0" expanded="true" />
-                <element signature="e#478#937#0" />
+                <element signature="e#1#18#0" expanded="true" />
+                <element signature="e#259#724#0" />
+                <element signature="e#763#1222#0" />
+                <element signature="e#1249#1664#0" />
+                <element signature="e#3770#4225#0" />
+                <element signature="e#3640#4115#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="api_field_del.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/api_field_del.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="61">
+              <caret line="60" column="31" lean-forward="true" selection-start-line="60" selection-start-column="31" selection-end-line="60" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="api_field_add.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/api_field_add.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -59,44 +60,17 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web_cbss/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-81">
-              <caret line="3" column="66" selection-start-line="3" selection-start-column="66" selection-end-line="3" selection-end-column="66" />
+            <state>
+              <caret line="3" column="131" selection-start-line="3" selection-start-column="131" selection-end-line="3" selection-end-column="131" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="api_details.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/api_details.html">
+      <file leaf-file-name="api_detail.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/api_detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-162">
-              <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-              <folding>
-                <element signature="e#138#205#0#HTML" />
-                <element signature="e#210#277#0#HTML" />
-                <element signature="e#282#352#0#HTML" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="api_headers.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/api_headers.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="50" column="18" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
-              <folding>
-                <element signature="e#105#184#0#HTML" />
-                <element signature="e#474#1119#0#HTML" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="api_add.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/api_add.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="19" column="60" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="60" />
+            <state relative-caret-position="169">
+              <caret line="18" column="65" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -104,20 +78,14 @@
       <file leaf-file-name="editTable.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/js/editTable.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+            <state relative-caret-position="345">
+              <caret line="180" column="58" selection-start-line="180" selection-start-column="58" selection-end-line="180" selection-end-column="58" />
               <folding>
-                <element signature="n#!!block;n#delRow#0" />
+                <element signature="n#!!block;n#createRow#0" />
+                <element signature="e#3038#3264#0" />
+                <element signature="n#!!block;n#updateRecord#0" />
+                <element signature="n#!!block;n#field_modify#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="15" column="71" selection-start-line="15" selection-start-column="63" selection-end-line="15" selection-end-column="71" />
             </state>
           </provider>
         </entry>
@@ -158,8 +126,12 @@
       <find>static</find>
       <find>list</find>
       <find>alert</find>
-      <find>saveRecord</find>
       <find>MYSQL_HOST</find>
+      <find>get_params</find>
+      <find>conte</find>
+      <find>saveRecord</find>
+      <find>save_record</find>
+      <find>Row</find>
     </findStrings>
     <replaceStrings>
       <replace>../assets</replace>
@@ -206,16 +178,21 @@
         <option value="$PROJECT_DIR$/extra_apps/xadmin/util.py" />
         <option value="$PROJECT_DIR$/templates/errors.html" />
         <option value="$PROJECT_DIR$/templates/api_details_back.html" />
-        <option value="$PROJECT_DIR$/templates/api_details.html" />
         <option value="$PROJECT_DIR$/templates/results.html" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
-        <option value="$PROJECT_DIR$/templates/api_headers.html" />
-        <option value="$PROJECT_DIR$/web_cbss/urls.py" />
         <option value="$PROJECT_DIR$/templates/api_add.html" />
-        <option value="$PROJECT_DIR$/static/js/editTable.js" />
-        <option value="$PROJECT_DIR$/apps/interface/views.py" />
         <option value="$PROJECT_DIR$/web_cbss/settings.py" />
         <option value="$PROJECT_DIR$/db/dbhelper.py" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/templates/api_details.html" />
+        <option value="$PROJECT_DIR$/templates/api_modify.html" />
+        <option value="$PROJECT_DIR$/templates/api_headers.html" />
+        <option value="$PROJECT_DIR$/templates/api_field_modify.html" />
+        <option value="$PROJECT_DIR$/templates/api_field_add.html" />
+        <option value="$PROJECT_DIR$/templates/api_detail.html" />
+        <option value="$PROJECT_DIR$/templates/api_field_del.html" />
+        <option value="$PROJECT_DIR$/web_cbss/urls.py" />
+        <option value="$PROJECT_DIR$/static/js/editTable.js" />
+        <option value="$PROJECT_DIR$/apps/interface/views.py" />
       </list>
     </option>
   </component>
@@ -272,6 +249,11 @@
               <item name="js" type="462c0819:PsiDirectoryNode" />
               <item name="bootstrap.js" type="620a8d5e:NestingTreeNode" />
             </path>
+            <path>
+              <item name="website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="website" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -288,18 +270,18 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="Z:\projects\cbssWeb\website" />
-      <recent name="Z:\projects\cbssWeb\website\templates" />
-      <recent name="Z:\projects\cbssWeb\website\apps\interface" />
-      <recent name="Z:\projects\cbssWeb\website\apps\api" />
-      <recent name="Z:\projects\web_cbss" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="Z:\projects\cbssWeb\website\apps" />
       <recent name="Z:\projects\web_cbss\apps" />
       <recent name="Z:\projects\web_cbss\extra_apps" />
       <recent name="Z:\projects\web_cbss\templates" />
+      <recent name="Z:\projects\web_cbss" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="Z:\projects\cbssWeb\website\templates" />
+      <recent name="Z:\projects\cbssWeb\website" />
+      <recent name="Z:\projects\cbssWeb\website\apps\interface" />
+      <recent name="Z:\projects\cbssWeb\website\apps\api" />
       <recent name="Z:\projects\web_cbss" />
     </key>
   </component>
@@ -390,12 +372,11 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3291536" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32743362" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.39115044" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34867257" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.28495574" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4960212" visible="true" weight="0.13581245" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4960212" visible="true" weight="0.08326597" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" sideWeight="0.5039788" side_tool="true" weight="0.26596606" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -406,31 +387,32 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="manage.py@web_cbss" order="7" weight="0.3522124" />
     </layout>
     <layout-to-restore>
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4960212" visible="true" weight="0.0040420373" />
       <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3291536" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5362832" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4960212" visible="true" weight="0.0040420373" />
       <window_info id="Structure" order="1" sideWeight="0.5039788" side_tool="true" weight="0.26596606" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="13" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5362832" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Python Console" order="9" weight="0.32743362" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32920355" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3291536" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="manage.py@web_cbss" order="12" weight="0.3522124" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="9" weight="0.32743362" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -441,25 +423,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <option name="time" value="6" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11514">
-          <caret line="606" column="42" selection-start-line="606" selection-start-column="42" selection-end-line="606" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cust_info/models.py" />
     <entry file="file://$PROJECT_DIR$/cbss/migrations/0002_auto_20190221_1547.py" />
     <entry file="file://$PROJECT_DIR$/cbss/migrations/0003_auto_20190221_1548.py" />
     <entry file="file://$PROJECT_DIR$/cbss/migrations/0001_initial.py" />
@@ -552,9 +519,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-          <folding>
-            <element signature="e#68#82#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -626,76 +590,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/js/bootstrap.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/static/js/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/api_details.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-162">
-          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-          <folding>
-            <element signature="e#138#205#0#HTML" />
-            <element signature="e#210#277#0#HTML" />
-            <element signature="e#282#352#0#HTML" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/api_headers.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="50" column="18" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
-          <folding>
-            <element signature="e#105#184#0#HTML" />
-            <element signature="e#474#1119#0#HTML" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/api_add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="19" column="60" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_cbss/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-81">
-          <caret line="3" column="66" selection-start-line="3" selection-start-column="66" selection-end-line="3" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/editTable.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
-          <folding>
-            <element signature="n#!!block;n#delRow#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="15" column="71" selection-start-line="15" selection-start-column="63" selection-end-line="15" selection-end-column="71" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/../../envs/interface/Lib/site-packages/MySQLdb/connections.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -704,30 +602,107 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/db/dbhelper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="38" />
+          <folding>
+            <element signature="e#70#90#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web_cbss/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="144" selection-start-line="144" selection-end-line="147" selection-end-column="23" />
+        <state relative-caret-position="136">
+          <caret line="147" column="23" selection-start-line="147" selection-start-column="23" selection-end-line="147" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-117">
+          <caret line="21" selection-start-line="21" selection-end-line="27" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/api_headers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-54">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/api_add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="59" selection-start-line="59" selection-end-line="61" selection-end-column="24" />
+          <folding>
+            <element signature="n#block#0;n#!!top" />
+            <element signature="n#block#2;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/api_field_modify.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-65">
+          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/api_field_add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/api_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="18" column="65" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_cbss/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="3" column="131" selection-start-line="3" selection-start-column="131" selection-end-line="3" selection-end-column="131" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/api_field_del.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="60" column="31" lean-forward="true" selection-start-line="60" selection-start-column="31" selection-end-line="60" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/editTable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="180" column="58" selection-start-line="180" selection-start-column="58" selection-end-line="180" selection-end-column="58" />
+          <folding>
+            <element signature="n#!!block;n#createRow#0" />
+            <element signature="e#3038#3264#0" />
+            <element signature="n#!!block;n#updateRecord#0" />
+            <element signature="n#!!block;n#field_modify#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/interface/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="67" column="25" lean-forward="true" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
+        <state relative-caret-position="55">
+          <caret line="116" column="4" selection-start-line="116" selection-start-column="4" selection-end-line="116" selection-end-column="4" />
           <folding>
-            <element signature="e#1#13#0" expanded="true" />
-            <element signature="e#478#937#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/dbhelper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-          <folding>
-            <element signature="e#70#90#0" expanded="true" />
+            <element signature="e#1#18#0" expanded="true" />
+            <element signature="e#259#724#0" />
+            <element signature="e#763#1222#0" />
+            <element signature="e#1249#1664#0" />
+            <element signature="e#3770#4225#0" />
+            <element signature="e#3640#4115#0" />
           </folding>
         </state>
       </provider>
