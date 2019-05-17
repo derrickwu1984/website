@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
+{% block title %}企业网银接口增加页{% endblock %}
 {% block search %}
 {% endblock %}
 {% block content %}
@@ -61,7 +62,7 @@
 
                 </tbody>
             </table>
-                <button type="button" onclick="saveRecord()">提交</button>
+                <button type="button" onclick="saveRecord('api')">提交</button>
         </div>
     {% csrf_token %}
     </center>
