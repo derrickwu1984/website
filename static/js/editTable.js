@@ -53,13 +53,13 @@ function delRow(obj) {
             }
         }
 }
-
-function saveRecord() {
+//obj区分是添加接口还是添加字段
+function saveRecord(obj) {
     var token = $('input[name=csrfmiddlewaretoken]').val();
     node =$('.tr_class')
-    trs_code =$('#trs_code').val()?"":$('#trs_code').text()
-    trs_name =$('#trs_name').val()?"":$('#trs_name').text()
-    fuc_desc =$('#fuc_desc').val()?"":$('#fuc_desc').text()
+    trs_code =$('#trs_code').text()?$('#trs_code').text():$('#trs_code').val()
+    trs_name =$('#trs_name').text()?$('#trs_name').text():$('#trs_name').val()
+    fuc_desc =$('#fuc_desc').text()?$('#fuc_desc').text():$('#fuc_desc').val()
     var list=[]
     for (var i=0;i<node.length;i++){
         array=[]
@@ -84,7 +84,6 @@ function saveRecord() {
         "form_data": JSON.stringify(list)
     }
     // ajax将list发往后台
-    console.log(list)
     $.ajax({
        	 url:"/save_record/",
          dataType:"JSON",
@@ -92,20 +91,34 @@ function saveRecord() {
          async:"true",
          data:post_data,
          success:function(result){
-       	     if (result.status == 200){console.log("接口添加成功^!^")}
+       	     if (result.status == 200){
+       	         //如果是添加字段成功，路由到接口详情页:api_detail.html
+       	         if(obj=='field'){
+       	             alert(result.msg)
+                     window.location.href="/trs_code/"+trs_code
+                 }
+                 //如果是添加接口成功，则路由到首页:api_headers.html
+                 else {
+       	             alert(result.msg)
+                     window.location.href="/header/"
+                 }
+       	     }
        	     },
          error:function(result){
-       	     if (result.status != 200){console.log("接口添加失败！")}
+       	     if (result.status != 200){
+       	         alert(result.msg)
+                 window.location.href="/header/"
+       	     }
          }
 });
 }
-
+//修改字段
 function updateRecord() {
     var token = $('input[name=csrfmiddlewaretoken]').val();
     node =$('.tr_class')
-    trs_code =$('#trs_code').val()
-    trs_name =$('#trs_name').val()
-    fuc_desc =$('#fuc_desc').val()
+    trs_code =$('#trs_code').text()?$('#trs_code').text():$('#trs_code').val()
+    trs_name =$('#trs_name').text()?$('#trs_name').text():$('#trs_name').val()
+    fuc_desc =$('#fuc_desc').text()?$('#fuc_desc').text():$('#fuc_desc').val()
     var list=[]
     for (var i=0;i<node.length;i++){
         array=[]
@@ -131,20 +144,31 @@ function updateRecord() {
         "csrfmiddlewaretoken": token,
         "form_data": JSON.stringify(list)
     }
-    console.log(list)
     // ajax将list发往后台
+    console.log(list)
     $.ajax({
-       	 url:"/update_record/",
+       	 url:"/field_modify_save/",
          dataType:"JSON",
          type:"POST",
          async:"true",
          data:post_data,
-         success:function(data){alert("接口修改成功^!^")},
-         error:function(){alert("接口修改失败！")}
+         success:function(result){
+       	     if (result.status == '200'){
+       	         alert(result.msg)
+                 window.location.href="/trs_code/"+trs_code
+       	     }
+       	     },
+         error:function(result){
+       	     alert(result.msg)
+       	     if (result.status != '200'){
+       	         alert(result.msg)
+       	     window.location.href="/header/"
+       	     }
+         }
 });
 }
 function field_modify() {
-    trs_code=$("#trs_code").text()
+    trs_code=$('#trs_code').text()?$('#trs_code').text():$('#trs_code').val()
     $.ajax({
          url:"/field_modify/"+trs_code,
          type:"GET",
@@ -155,6 +179,7 @@ function field_modify() {
 
 function  delRecord() {
     var token = $('input[name=csrfmiddlewaretoken]').val();
+    trs_code=$('#trs_code').text()?$('#trs_code').text():$('#trs_code').val()
     delList=[]
     if (confirm("确认删除所选?")) {
         $(':checkbox:checked').each(function(){
@@ -163,10 +188,10 @@ function  delRecord() {
             delList.push(v)
         })
     }
-    console.log(delList)
     var post_data= {
         "csrfmiddlewaretoken": token,
-        "form_data": JSON.stringify(delList)
+        "form_data": JSON.stringify(delList),
+        "trs_code":trs_code
     }
     $.ajax({
        	 url:"/field_del_save/",
@@ -175,10 +200,37 @@ function  delRecord() {
          async:"true",
          data:post_data,
          success:function(result){
-       	     if (result.status == '200'){console.log("接口删除成功^!^")}
+       	     if (result.status == '200'||result.status == '400'){
+       	         alert(result.msg)
+                 window.location.href="/trs_code/"+trs_code
+       	     }
        	     },
          error:function(result){
-       	     if (result.status != '200'){console.log("接口删除失败！")}
+       	     if (result.status != '400' && result.status != '200'){
+       	         alert(result.msg)
+       	     window.location.href="/header/"
+       	     }
          }
 });
+}
+
+//接口详情页，增、删、改功能
+function  change(obj) {
+    if (obj=='header'||obj=='search'){
+        window.location.href='/'+obj+'/'
+    } else {
+        trs_code=$('#trs_code').text()?$('#trs_code').text():$('#trs_code').val()
+        window.location.href='/'+obj+'/'+trs_code
+    }
+}
+//首页搜索接口功能
+function  search() {
+    param=$("#q").text()?$("#q").text():$("#q").val()
+    window.location.href='/search/?q='+param
+}
+//返回上一页
+function goback() {
+    trs_code=$('#trs_code').text()?$('#trs_code').text():$('#trs_code').val()
+    window.location.href='/trs_code/'+trs_code
+    
 }

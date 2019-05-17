@@ -1,0 +1,23 @@
+.goback{
+    position: absolute;
+    right: 195px;
+}
+table{
+    width:60%;
+}
+table tr:nth-child(-n+5) td{
+    /*border:1px solid;*/
+}
+.origin_inter{
+    background: yellow;
+    border-spacing: 0px;
+    font-size: 18px;
+    text-align: center;
+}
+.flag{
+     background: greenyellow;
+    text-align: center;
+}
+.rowColor{
+    background: yellow;
+}

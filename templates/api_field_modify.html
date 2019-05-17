@@ -1,6 +1,17 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
 {% block title %}企业网银接口修改页{% endblock %}
+{% block search %}
+    <center>
+    <tr>
+        <input type="search" placeholder="请输入交易码" id="q" required>
+        <input type="button" value="搜索" onclick="search()"/>
+        <input type="button" value="返回首页" onclick="change('header')"/>
+    </tr>
+    </center>
+{% endblock %}
+{% block header %}
+{% endblock %}
 {% block content %}
     <center>
         <div class="table_detail">
@@ -21,6 +32,7 @@
                     <td>原始接口</td>
                 </tr>
                 <tr>
+                    <td></td>
                     <td>英文名称</td>
                     <td>中文名称</td>
                     <td>数据类型</td>

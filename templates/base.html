@@ -12,23 +12,23 @@
 {% block search %}
     <center>
     <tr>
-        <form method="get" action="/search/">
-            <input type="search" placeholder="请输入交易码" name="q" required>
-            <button type="submit">搜索</button>
-        </form>
+        <input type="search" placeholder="请输入交易码" id="q" required>
+        <input type="button" class="search" value="搜索" onclick="search()"/>
     </tr>
     </center>
 {% endblock %}
 {% block header %}
     <center>
-        <form method="get" action="/header/">
-            <button type="submit">返回首页</button>
-        </form>
+            <input class='goback' type="button" value="返回首页" onclick="change('header')"/>
     </center>
 {% endblock %}
 {% block content %}
 {% endblock %}
 
-{% block custom_js %}{% endblock %}
+{% block custom_js %}
+<script src="{% static 'js/jquery.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/editTable.js' %}" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="{% static 'css/self.css' %}">
+{% endblock %}
 </body>
 </html>
