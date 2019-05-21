@@ -92,7 +92,8 @@ DATABASES = {
         'NAME': "mysql",
         'USER':"root",
         'PASSWORD':"root12#$",
-        'HOST':'127.0.0.1'
+        'HOST':'192.168.204.128'
+        # 'HOST':'127.0.0.1'
     }
 }
 
@@ -142,7 +143,8 @@ STATICFILES_DIRS = (
     ('plug', os.path.join(STATIC_ROOT, 'plug')),
     ('assets', os.path.join(STATIC_ROOT, 'assets')),
 )
-MYSQL_HOST='localhost'
+# MYSQL_HOST='localhost'
+MYSQL_HOST='192.168.204.128'
 MYSQL_DBNAME='mysql'
 MYSQL_USER='root'
 MYSQL_PASSWD='root12#$'

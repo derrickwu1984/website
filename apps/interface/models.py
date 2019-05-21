@@ -1,16 +1,10 @@
 from django.db import models
 
 # Create your models here.
-class Header(models.Model):
-    trs_code = models.CharField(primary_key=True,max_length=20, null=False, verbose_name='交易码')
-    trs_name = models.CharField(max_length=200, default='', null=False, verbose_name='交易名称')
-    fuc_desc = models.CharField(max_length=1000, default='', null=False, verbose_name='交易描述')
-    class Meta:
-        verbose_name=u"接口概要"
-        verbose_name_plural=verbose_name
+
 class Details(models.Model):
     id = models.CharField(primary_key=True, max_length=200,default='', null=False)
-    trs_code = models.ForeignKey(Header,max_length=20, default='', null=False, verbose_name='交易码')
+    trs_code = models.CharField(max_length=20, default='', null=False, verbose_name='交易码')
     trs_name = models.CharField(max_length=200, default='', null=False, verbose_name='交易名称')
     fuc_desc = models.CharField(max_length=1000, default='', null=False, verbose_name='交易描述')
     flag = models.CharField(max_length=30, default='', null=False, verbose_name='输入输出标识')

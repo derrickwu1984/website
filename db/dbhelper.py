@@ -3,12 +3,10 @@ __author__ = 'wmx'
 __date__ = '2019/4/18 10:52'
 
 import  MySQLdb,uuid
-from scrapy.utils.project import get_project_settings #导入setting文件
 
 class DBHelper():
     #插入数据
     def insert_api(line):
-        settings = get_project_settings()
         MYSQL_HOST = 'localhost'
         MYSQL_DBNAME = 'mysql'
         MYSQL_USER = 'root'
