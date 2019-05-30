@@ -1,5 +1,5 @@
 
-import  json,uuid
+import  json,uuid,os
 from django.shortcuts import render,HttpResponse
 from django.views.generic import View
 from pure_pagination import Paginator, EmptyPage, PageNotAnInteger
@@ -163,3 +163,19 @@ def field_del_save(request):
             print ('else')
             return HttpResponse('{"status":"400", "msg":"该接口只剩下一个字段，不可以继续删除"}', content_type='application/json')
     return HttpResponse('{"status":"200", "msg":"数据删除成功"}', content_type='application/json')
+
+def upload(request):
+        return render(request,'excel_upload.html')
+
+def excel_upload(request):
+    if request.method == "POST":    # 请求方法为POST时，进行处理
+        myFile =request.FILES.get("myfile", None)    # 获取上传的文件，如果没有文件，则默认为None
+        if not myFile:
+            return HttpResponse("没有文件需要上传!")
+        destination = open(os.path.join("./upload/",myFile.name),'wb+')    # 打开特定的文件进行二进制的写操作
+        for chunk in myFile.chunks():      # 分块写入文件
+            destination.write(chunk)
+        destination.close()
+        return HttpResponse("文档上传成功！")
+    else:
+        return HttpResponse("文档上传没使用POST方法！")
