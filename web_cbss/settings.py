@@ -144,7 +144,10 @@ STATICFILES_DIRS = (
     ('assets', os.path.join(STATIC_ROOT, 'assets')),
 )
 # MYSQL_HOST='localhost'
-MYSQL_HOST='192.168.204.128'
+MYSQL_HOST='127.0.0.1'
 MYSQL_DBNAME='mysql'
 MYSQL_USER='root'
 MYSQL_PASSWD='root12#$'
+
+UPLOAD_DIR='./upload/'
+UPLOAD_FILE_NAME='1.xlsx'

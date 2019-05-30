@@ -6,6 +6,8 @@ from pure_pagination import Paginator, EmptyPage, PageNotAnInteger
 from .models import Details
 from db.dbhelper import DBHelper
 from django.db import transaction
+from .readUploadExcel import check_record,read_excel
+
 
 def get_headers(request):
     infos = (Details.objects.values("trs_code","trs_name","fuc_desc").order_by("trs_code")).distinct()
@@ -176,6 +178,15 @@ def excel_upload(request):
         for chunk in myFile.chunks():      # 分块写入文件
             destination.write(chunk)
         destination.close()
+        trs_code=check_record()
+        check_result = Details.objects.all().filter(trs_code=trs_code)
+        if check_result:
+           msg ="%s已存在，请在数据库中删除该接口信息后再重新上传"%trs_code
+        else:
+            result = read_excel()
+            print(result)
+
+            # msg ="%s不存在，可以上传"%trs_code
         return HttpResponse("文档上传成功！")
     else:
         return HttpResponse("文档上传没使用POST方法！")
