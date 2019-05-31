@@ -9,12 +9,12 @@
                 <form enctype="multipart/form-data" action="/excel_upload/" method="post">
                     {% csrf_token %}
                     <input type="file" name="myfile" />
-                    <br/>
                     <input type="submit" value="excel接口文档上传"/>
                 </form>
         </div>
+        <div>
+            {{ msg }}
+        </div>
     </tr>
     </center>
-{% endblock %}
-{% block header %}
 {% endblock %}

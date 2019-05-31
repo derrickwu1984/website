@@ -23,11 +23,13 @@ table tr:nth-child(-n+5) td{
 }
 .func_add{
     float: left;
-    width: 50%;
+    width: 48%;
     text-align: right;
+    margin-right: 2%;
 }
 .upload{
     float: left;
-    width: 50%;
+    width: 48%;
     text-align: left;
+    margin-left: 2%;
 }

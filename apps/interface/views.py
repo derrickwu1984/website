@@ -1,5 +1,5 @@
 
-import  json,uuid,os
+import  json,uuid,os,time
 from django.shortcuts import render,HttpResponse
 from django.views.generic import View
 from pure_pagination import Paginator, EmptyPage, PageNotAnInteger
@@ -7,6 +7,8 @@ from .models import Details
 from db.dbhelper import DBHelper
 from django.db import transaction
 from .readUploadExcel import check_record,read_excel
+#导入django settings文件
+from django.conf import settings
 
 
 def get_headers(request):
@@ -183,10 +185,16 @@ def excel_upload(request):
         if check_result:
            msg ="%s已存在，请在数据库中删除该接口信息后再重新上传"%trs_code
         else:
+            #读取excel，数据写入数据库
             result = read_excel()
-            print(result)
-
-            # msg ="%s不存在，可以上传"%trs_code
-        return HttpResponse("文档上传成功！")
+            msg ="%s导入成功"%trs_code
+        #不管成功与否，都将上传文件重命名，格式为：trs_code+yyyymmdd hh:mm:ss
+        cur_time=time.strftime('%Y-%m-%d-%H%M%S', time.localtime(time.time()))
+        path='./upload/'
+        filepath = os.path.abspath(path).replace('\\', '/')
+        os.rename(str((os.path.join(filepath,myFile.name)).replace('\\', '/')).strip(),str((os.path.join(filepath,trs_code+"-"+cur_time+".xlsx")).replace('\\', '/')).strip())
+        return render(request, 'excel_upload.html',{
+            "msg":msg
+        })
     else:
         return HttpResponse("文档上传没使用POST方法！")
