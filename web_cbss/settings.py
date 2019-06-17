@@ -92,8 +92,7 @@ DATABASES = {
         'NAME': "mysql",
         'USER':"root",
         'PASSWORD':"root12#$",
-        # 'HOST':'192.168.204.128'
-        'HOST':'127.0.0.1'
+        'HOST':'10.4.3.238'
     }
 }
 
